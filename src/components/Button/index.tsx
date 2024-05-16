@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { FC } from 'react';
 
 const Container = styled.button`
   border: 0;
@@ -23,6 +24,14 @@ interface Props {
     readonly onClick: () => void;
 }
 
-export const Button = (props: Props) => {
-    return <Container onClick={props.onClick}> {props.lable} </Container>
+// FC 사용한 함수식
+// const Button: FC<Props> = ({ onClick, lable }) => {
+//   return <Container onClick={onClick}> {lable} </Container>
+// }
+
+// FC 사용안한 함수식
+const Button = (props: Props) => {
+  return <Container onClick={props.onClick}> {props.lable} </Container>
 }
+
+export default Button;

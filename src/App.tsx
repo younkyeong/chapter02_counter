@@ -3,8 +3,8 @@ import "./App.css";
 import styled from '@emotion/styled';
 import { useState } from 'react';
 import { setCommentRange } from "typescript";
-import { Button } from 'components/Button';
-import {Lable} from 'components/Lable';
+import { default as Button } from 'components/Button/index';
+import {default as Lable} from 'components/Lable';
 
 const Container = styled.div`
 height: 100vh;
