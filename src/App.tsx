@@ -3,7 +3,8 @@ import "./App.css";
 import styled from '@emotion/styled';
 import { useState } from 'react';
 import { setCommentRange } from "typescript";
-import { Button } from 'components/Button'
+import { Button } from 'components/Button';
+import {Lable} from 'components/Lable';
 
 const Container = styled.div`
 height: 100vh;
@@ -24,11 +25,6 @@ align-items: center;
 justify-content: center;
 `;
 
-const Lable = styled.span`
-margin: 0 16px;
-font-size: 1.2rem;
-`;
-
 
 
 function App() {
@@ -47,7 +43,7 @@ function App() {
       <Title>Counter App</Title>
       <Contents>
         <Button lable="-" onClick={ sub }/>
-        <Lable>{counter}</Lable>
+        <Lable data={counter}/>
         <Button lable="+" onClick={ add }/>
       </Contents>
     </Container>

@@ -24,5 +24,5 @@ interface Props {
 }
 
 export const Button = (props: Props) => {
-    return <Container onClick={props.onClick}> props.lable </Container>
+    return <Container onClick={props.onClick}> {props.lable} </Container>
 }
